@@ -1,0 +1,105 @@
+.allEventDetailsContainer {
+  /* display: flex; */
+  /* flex-direction: row; */
+  gap: 10px;
+  padding: 20px;
+  width: 1000px;
+  margin: auto;
+  height: 550px;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  /* border: 2px solid blueviolet; */
+
+  /* Custom WebKit scrollbar */
+  scrollbar-width: thin; /* "thin" makes scrollbar thinner */
+  scrollbar-color: rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.3); /* thumb and track colors */
+}
+
+.allEventDetailsContainer::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+  visibility: hidden; /* Initially hide the scrollbar */
+  border-radius: 5px; /* Rounded corners of the scrollbar */
+  background-color: rgba(255, 255, 255, 0.3); /* Color of the track */
+}
+
+.allEventDetailsContainer::-webkit-scrollbar-thumb {
+  width: 3px; /* Width of the thumb */
+  visibility: hidden; /* Initially hide the thumb */
+  border-radius: 5px; /* Rounded corners of the thumb */
+  background-color: rgba(255, 255, 255, 0.4); /* Color of the thumb */
+}
+
+.allEventDetailsContainer:hover::-webkit-scrollbar-thumb,
+.allEventDetailsContainer:hover::-webkit-scrollbar {
+  visibility: visible; /* Show scrollbar and thumb on hover */
+}
+
+
+.noEventsMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+
+.jobOverview {
+  display: grid;
+  width: 800px;
+  height: fit-content;
+  padding: 5px;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease; 
+}
+
+.jobOverview:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.jobOverview p {
+  margin: 8px 15px;
+  text-align: left;
+  height: fit-content;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+.jobOverview ,.additionalClass,.filterClass{
+  color: inherit;
+  display: grid;
+  text-decoration: none;
+  width: 800px;
+  height: fit-content;
+  padding: 5px;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.jobOverview:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.jobOverview p ,.additionalClass p{
+  
+  margin: 8px 15px;
+  text-align: left;
+  height: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.filterClass input,.filterClass select{
+  margin: 2px 15px;
+  padding: 5px;
+}
+.additionalClass {
+  /* background-color: #f0f0f0; */
+  border-bottom: 1px solid #ccc;
+  margin-top:0;
+  font-size: 1.1rem;
+}
+

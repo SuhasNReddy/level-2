@@ -1,0 +1,49 @@
+/* Navbar.module.css */
+
+.navBar {
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    background: white;
+  }
+  
+  .navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navBar li {
+    display: inline;
+    font-weight: 600;
+    padding: 5px;
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    margin: 0 50px;
+    color: #236cac;
+    font-size: 1.2rem; /* Apply font size from .navBar * */
+  }
+  
+  .navBar a:hover, .logout:hover {
+    text-decoration: underline;
+  }
+  
+
+  
+  .logo {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+  }
+  
+
+  
+  .activeLink {
+    text-decoration: underline;
+  }
+  

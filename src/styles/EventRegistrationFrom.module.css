@@ -1,0 +1,194 @@
+/* Updated styles for your EventRegistrationForm.module.css file */
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Form container */
+.formContainer {
+    display: flex;
+    width: 500px;
+    padding: 20px;
+  }
+  
+  /* Form fields container */
+  .formFields {
+    width: 100%;
+  }
+  
+  /* Form labels */
+  .formLabel {
+    display: block;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Text input styles */
+  .formContainer input[type="text"],
+  .formContainer input[type="email"],
+  .formContainer input[type="number"] {
+    height: 35px;
+    width: 60%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #236cac;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #444;
+    transition: all 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .formContainer input[type="text"]:focus,
+  .formContainer input[type="email"]:focus,
+  .formContainer input[type="number"]:focus {
+    border-color: #70cdf8;
+    background-color: #fff;
+    border-width: 2.5px;
+  }
+  
+  /* Checkbox input styles */
+  .formContainer input[type="checkbox"] {
+    margin-top: 5px;
+  }
+  
+  /* Submit button styles */
+  .submitButton {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#236cac;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    /* outline: 2px solid #70cdf8; */
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin: 15px;
+  }
+  
+  .submitButton:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    /* outline: 2px solid #70bdca; */
+    box-shadow: 4px 5px 17px -4px #236cac;
+  }
+  
+  .submitButton:disabled {
+    cursor: inherit;
+  }
+  
+  .submitButton::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #236cac;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .submitButton:hover::before {
+    width: 250%;
+  }
+  
+  
+  /* Error text styles */
+  .errorText {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .guestWrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+  .checkboxtext{
+    margin-right:5px ;
+  }
+
+
+  /* EventRegistrationFrom.module.css */
+
+.datetimeInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.datetimeInput {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.datetimeInput:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* EventRegistrationFrom.module.css */
+
+.datetimeInputContainer, .dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdownContainer{
+  /* font-size: 1.1rem; */
+  
+}
+
+.datetimeInput, .dropdownInput {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  width: 200px;
+}
+
+.datetimeInput:focus, .dropdownInput:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroupHeader {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.container input[type="checkbox"]{
+  margin: 0 5px;
+}
