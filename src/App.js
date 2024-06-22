@@ -5,6 +5,7 @@ import EventRegistrationForm from './components/EventRegistrationFrom';
 // import EventRegistrationDetails from './EventRegestrationDetails';
 import AllEventDetails from './components/AllEventDetails';
 import EventRegistrationDetail from './components/EventRegestrationDetails';
+import SampleJobDetails from './components/SampleJobDetails';
 
 function App() {
   const [allEvents, setAllEvents] = useState([]);
@@ -17,7 +18,7 @@ function App() {
               <Route path='/allJobDetails' element={<AllEventDetails allEvents={allEvents} />} />
               <Route path='/register' element={<EventRegistrationForm setAllEvents={setAllEvents} />} />
               <Route path='/jobDetail/:id' element={<EventRegistrationDetail allEvents={allEvents} />} />
-              <Route path='/' element={<EventRegistrationForm setAllEvents={setAllEvents} />} />
+              <Route path='/' element={<SampleJobDetails />} />
           </Routes>
       </div>
     </Router>
