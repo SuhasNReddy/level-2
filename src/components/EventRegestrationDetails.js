@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/EventRegistrationDetail.module.css'; // Import CSS module
 import { useParams } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.css'; // Import FontAwesome CSS
+import sampleData from '../Data/SampleData';
 
 const EventRegistrationDetail = ({ allEvents }) => {
   const { id } = useParams();
