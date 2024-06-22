@@ -6,8 +6,8 @@ import '@fortawesome/fontawesome-free/css/all.css'; // Import FontAwesome CSS
 const EventRegistrationDetail = ({ allEvents }) => {
   const { id } = useParams();
 
-  // Find the event registration based on the id parameter
-  const event = allEvents.find(event => event.id === id);
+  
+  const event = allEvents.find(event => event.id === id) || sampleData.find(event => event.id === id);
 
   if (!event) {
     return <p className={styles.noEventMessage}>Event registration not found</p>;
